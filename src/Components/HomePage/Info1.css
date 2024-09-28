@@ -1,0 +1,94 @@
+/* Mainbox Styles */
+.mainbox {
+    border: none;
+    background: linear-gradient(135deg, #ff8c00, white);
+    color: #ffffff;
+    padding: 30px;
+    max-width: 70vw;
+    height: 40vh;
+    justify-content: space-between;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    gap: 20px;
+    position: relative;
+    top: 90vh;
+    /* Start hidden to the left */
+    transform: translateX(-100%);
+    opacity: 0;
+    /* Start transparent */
+}
+
+/* Add a class for the visible state */
+.mainbox.visible {
+    transform: translateX(0);
+    /* Move to the original position */
+    opacity: 1;
+    /* Fully opaque */
+}
+
+/* Hover Effect */
+.mainbox:hover {
+    transform: scale(1.02);
+}
+
+/* Text Content Container */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+/* Heading Styles */
+#head {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Subtext Styles */
+#sub {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Phone Image Styles */
+#phone-image img {
+    width: 35vw;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    position: relative;
+    float: right;
+    left: 150px;
+    bottom: 45vh;
+}
+
+/* Image Hover Effect */
+#phone-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mainbox {
+        flex-direction: column;
+        max-width: 90vw;
+        padding: 20px;
+    }
+
+    .text-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #phone-image img {
+        width: 60vw;
+        margin-top: 20px;
+    }
+}

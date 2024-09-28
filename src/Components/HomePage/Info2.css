@@ -1,0 +1,111 @@
+/* Prevent horizontal scroll caused by off-screen elements */
+body {
+    overflow-x: hidden;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    background: linear-gradient(to left, #ff8c00, white);
+    padding: 30px;
+    width: 60vw;
+    /* Reduced width for better visibility */
+    height: 45vh;
+    /* Removed top: 75vh; to prevent vertical displacement */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    top: 75vh;
+    transform: translateX(100%);
+    /* Start off-screen to the right */
+    opacity: 0;
+    /* Start transparent */
+    margin: 50px 0;
+    /* Align to the right */
+    text-align: right;
+}
+
+#main-container.visible {
+    transform: translateX(0);
+    /* Slide in from right to left */
+    opacity: 1;
+    /* Fully visible */
+}
+
+#Header {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+    margin-left: 30vw;
+}
+
+#sub-head {
+    font-size: 55x;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 30vw;
+}
+
+#photo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#photo img {
+    width: 10vw;
+    height: 10vw;
+}
+
+#photo #photo1 {
+    width: 17vw;
+    height: 17vw;
+    position: relative;
+    bottom: 35vh;
+}
+
+#photo #photo2 {
+    position: relative;
+    bottom: 50vh;
+    right: 53vw;
+}
+
+#photo img:first-child,
+#photo img:last-child {
+    border-radius: 50%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #main-container {
+        max-width: 80vw;
+        padding: 20px;
+        width: 80vw;
+        /* Ensure width consistency on smaller screens */
+    }
+
+    #Header {
+        font-size: 30px;
+        margin-left: 20vw;
+        /* Adjusted margin for smaller screens */
+    }
+
+    #sub-head {
+        font-size: 18px;
+        margin-left: 20vw;
+        /* Adjusted margin for smaller screens */
+    }
+
+    #photo img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #photo #photo1 {
+        width: 25vw;
+        height: 25vw;
+    }
+}
