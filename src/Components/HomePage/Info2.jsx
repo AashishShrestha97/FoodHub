@@ -1,44 +1,35 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import '../HomePage/Info2.css';
 
 const Info2 = () => {
-    const mainContainerRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
+    const mainBoxRef = useRef(null);
 
     useEffect(() => {
-        const container = mainContainerRef.current;
+      const handleScroll = () => {
+        const box = mainBoxRef.current;
+        const boxTop = box.getBoundingClientRect().top;
 
-        if (!container) return;
+        // Check if the box is in view
+        if (boxTop < window.innerHeight && boxTop > 0) {
+          box.classList.add("visible"); // Add the visible class
+        } else {
+          box.classList.remove("visible"); // Remove the visible class if it goes out of view
+        }
+      };
 
-        const observerOptions = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.1,
-        };
+      window.addEventListener("scroll", handleScroll);
+      // Call once to check if it's already in view
+      handleScroll();
 
-        const observerCallback = (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
-            });
-        };
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions);
-        observer.observe(container);
-
-        return () => {
-            if (container) observer.unobserve(container);
-        };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }, []);
 
     return (
         <div
             id="main-container"
-            ref={mainContainerRef}
-            className={isVisible ? "visible" : ""}
+            ref={mainBoxRef} // Corrected ref
         >
             <div id="Header">
                 <span>More than 100 Outlets and Restaurants are at your service.</span>
