@@ -7,9 +7,9 @@
 }
 
 /* Center the card container */
-.card {
+.cards {
     position: relative;
-    top: 40px;
+    top: 90px;
     text-align: center;
     /* Center text in the card */
     border: none;
@@ -24,7 +24,7 @@
     /* White text color for better contrast */
     max-width: 40vw;
     /* Set max width for the card */
-    max-height: 90vh;
+    max-height: 75vh;
     /* Set max height for the card */
     margin: auto;
     /* Center the card horizontally */
@@ -129,14 +129,16 @@ p {
 }
 
 /* Link styling */
-.text-muted {
+.password {
+    position: relative;
+    bottom: 130px;
     color: #bbb;
     /* Muted color for links */
     font-size: 1rem;
     /* Increased font size for links */
 }
 
-.text-muted:hover {
+.password:hover {
     text-decoration: underline;
     /* Underline on hover for links */
 }
