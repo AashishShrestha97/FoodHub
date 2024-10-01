@@ -1,3 +1,6 @@
+/* Navbar.css */
+
+/* Navbar Container */
 #navbox {
     position: relative;
     padding: 15px 60px;
@@ -6,15 +9,21 @@
     justify-content: space-between;
     background-color: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Ensure navbar stays on top */
 }
 
+/* Logo Section */
 #Logo img {
     width: 200px;
     height: 120px;
     position: relative;
     left: 80px;
+    object-fit: contain;
+    /* Ensure the logo scales properly */
 }
 
+/* Navigation Links */
 #navinfo {
     display: flex;
     gap: 30px;
@@ -25,36 +34,44 @@
     right: 60px;
     font-family: sans-serif;
     font-size: 23px;
-    font-weight: lighter;
+    font-weight: bold;
+    /* Changed from lighter to bold for better visibility */
     text-align: center;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 #navinfo a:hover {
     border-bottom: 3px solid orange;
+    color: #ff6600;
+    /* Adds color change on hover for better feedback */
 }
 
+/* User Actions Section */
 #navuses {
     display: flex;
     align-items: center;
     gap: 30px;
-}
-
-#navuses img {
     position: relative;
-    right: 50px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+    /* For positioning the search bar */
 }
 
-#navuses #search {
+/* Search Icon */
+#navuses img#search {
     width: 35px;
     height: 35px;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
 }
 
+#navuses img#search.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* Disables interaction when hidden */
+}
+
+/* Search Bar */
 .search-bar {
     position: absolute;
     top: 50%;
@@ -64,7 +81,7 @@
     overflow: hidden;
     background-color: #fff;
     padding: 0;
-    transition: width 0.4s ease;
+    transition: width 0.4s ease, padding 0.4s ease;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     height: 40px;
@@ -77,6 +94,7 @@
     padding: 0 10px;
 }
 
+/* Search Input */
 .search-input {
     border: none;
     outline: none;
@@ -91,6 +109,7 @@
     color: #888;
 }
 
+/* Close Button */
 .close-btn {
     background: none;
     border: none;
@@ -98,17 +117,118 @@
     color: #888;
     cursor: pointer;
     margin-left: 10px;
+    transition: color 0.3s ease;
 }
 
 .close-btn:hover {
     color: #ff4d4d;
 }
 
-#navbox #navuses #search {
+/* Account Button */
+#navbox #navuses button.account-button {
+    background-color: transparent;
+    /* Removes default button background */
+    border: none;
+    /* Removes default button border */
     cursor: pointer;
+    /* Changes cursor to pointer to indicate interactivity */
+    padding: 0;
+    /* Removes default padding */
+    margin-right: 10px;
+    /* Adds some margin for spacing */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Smooth animation on hover */
+}
+
+#navbox #navuses button.account-button:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+#navbox #navuses button.account-button img#account {
+    width: 50px;
+    /* Adjust size of account icon */
+    height: 50px;
     transition: opacity 0.4s ease;
 }
 
-#navbox #navuses #search.hidden {
-    opacity: 0;
+#navbox #navuses button.account-button:hover img#account {
+    opacity: 0.7;
+    /* Makes the icon semi-transparent on hover */
+}
+
+/* Focus Styles for Accessibility */
+#navbox #navuses button.account-button:focus img#account {
+    outline: 2px solid blue;
+    /* Highlights the button when focused */
+}
+
+/* Hidden Class for Search Icon */
+.hidden {
+    display: none;
+}
+
+/* General Button Styles */
+button {
+    font-family: inherit;
+    /* Inherits font from parent */
+}
+
+/* Remove Outline from Buttons, Handle Focus Separately */
+button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbox {
+        padding: 10px 20px;
+    }
+
+    #Logo img {
+        width: 150px;
+        height: 90px;
+        left: 60px;
+    }
+
+    #navinfo {
+        gap: 20px;
+        display: none;
+        /* Hides navigation links on smaller screens */
+    }
+
+    /* Placeholder for Hamburger Menu */
+    /* You can implement a hamburger menu icon here */
+    /* Example: */
+    /* #hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    } */
+
+    /* Adjust search bar position on smaller screens */
+    .search-bar {
+        right: 150px;
+    }
+
+    /* Adjust gap for user actions */
+    #navuses {
+        gap: 15px;
+    }
+}
+
+/* Additional Enhancements */
+
+/* Ensure images within buttons don't have unexpected margins or paddings */
+#navuses button img {
+    display: block;
+    /* Removes bottom whitespace */
+}
+
+/* Optional: Smooth transition for all interactive elements */
+#navuses img#search,
+#navuses button.account-button,
+#navinfo a {
+    transition: all 0.3s ease;
 }

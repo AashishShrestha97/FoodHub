@@ -12,6 +12,7 @@ import './Components/Navbar.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Info1 from './Components/HomePage/Info1.jsx';
 import Info2 from './Components/HomePage/Info2.jsx';
+import Login from './Components/Login/Login.jsx';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/services" element={<Services />} />
         <Route path="/categories" element={<Categories />} />
+        <Route path="/login" element={<Login />}/>
       </Routes>
     </Router>
   );
