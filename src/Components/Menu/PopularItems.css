@@ -18,10 +18,9 @@
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
-    padding-bottom: 10px;
+    top: 30px;
     display: inline-block;
     border-bottom: 3px solid #ff5733;
-    position: relative;
 }
 
 .ItemsCardContainer {

@@ -1,5 +1,5 @@
 import React from "react";
-import '../HomePage/PopularItems.css';
+import '../Menu/PopularItems.css';
 
 const items = [
     {

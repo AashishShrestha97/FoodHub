@@ -3,7 +3,7 @@
 /* Navbar Container */
 #navbox {
     position: relative;
-    padding: 15px 60px;
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;

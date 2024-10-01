@@ -14,6 +14,8 @@ import Info1 from './Components/HomePage/Info1.jsx';
 import Info2 from './Components/HomePage/Info2.jsx';
 import Login from './Components/Login/Login.jsx';
 import SignIn from './Components/Sign-In/SignIn.jsx';
+import AboutUs from './pages/AboutUs.jsx';
+import DiscountSection from './Components/HomePage/DiscountSection.jsx';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
             <Image1 />
             <Info1 />
             <Info2 />
+            <DiscountSection />
             <ContactUs />
           </>
         } />
@@ -36,6 +39,7 @@ function App() {
         <Route path="/categories" element={<Categories />} />
         <Route path="/login" element={<Login />}/>
         <Route path="/signin" element={<SignIn />}/>
+        <Route path="/aboutus" element={<AboutUs />}/>
       </Routes>
     </Router>
   );
