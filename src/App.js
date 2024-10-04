@@ -4,7 +4,6 @@ import Description from './Components/HomePage/Description.jsx'; // Home content
 import Image1 from './Components/HomePage/Image1.jsx'; // Home image component
 import Menu from './pages/Menu.jsx'; // Menu component
 import Services from './pages/Services.jsx'; // Services component
-import Categories from './pages/Categories.jsx';
 import ContactUs from './Components/ContactUs.jsx';
 import './Components/Navbar.css';
 
@@ -36,7 +35,6 @@ function App() {
         
         <Route path="/menu" element={<Menu />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/categories" element={<Categories />} />
         <Route path="/login" element={<Login />}/>
         <Route path="/signin" element={<SignIn />}/>
         <Route path="/aboutus" element={<AboutUs />}/>
