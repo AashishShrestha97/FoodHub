@@ -1,3 +1,154 @@
-#Big-Container {
-    border: 1px solid black;
+#Categories {
+    margin-top: 150px;
+    /* Reduced margin for a balanced layout */
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f3eeee;
+}
+
+#Categories p {
+    position: relative;
+    top: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    /* Increased spacing for better readability */
+    color: #333;
+}
+
+.CategoryCardContainer {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    grid-template-rows: repeat(4, 1fr);
+    /* 4 rows */
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.CategoryCard {
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CategoryCard:hover {
+    transform: translateY(-8px);
+    /* Enhanced hover effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.CategoryCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.CategoryCard:hover img {
+    transform: scale(1.05);
+    /* Subtle zoom effect on hover */
+}
+
+.CategoryCard h3 {
+    font-size: 1.6rem;
+    /* Slightly larger font for better emphasis */
+    color: #444;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.CategoryCard span {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 1rem 1rem;
+    line-height: 1.5;
+    /* Improves text readability */
+}
+
+.CategoryCard button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    /* Slightly larger padding for better clickability */
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.CategoryCard button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Adds a slight zoom effect to the button */
+}
+
+@media (max-width: 768px) {
+    #Categories {
+        margin-top: 80px;
+        /* Reduced top margin for smaller screens */
+    }
+
+    #Categories p {
+        font-size: 1.5rem;
+    }
+
+    .CategoryCard img {
+        height: 150px;
+        /* Adjusted image height for smaller screens */
+    }
+
+    .CategoryCard h3 {
+        font-size: 1.4rem;
+        /* Reduced size for better fit */
+    }
+
+    .CategoryCard span {
+        font-size: 0.9rem;
+    }
+
+    .CategoryCard button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        /* Adjusted padding for better proportion */
+    }
+}
+
+@media (max-width: 480px) {
+    #Categories p {
+        font-size: 1.2rem;
+    }
+
+    .CategoryCardContainer {
+        gap: 1rem;
+        /* Reduced gap for smaller devices */
+    }
+
+    .CategoryCard img {
+        height: 120px;
+        /* Further adjustment for very small screens */
+    }
+
+    .CategoryCard h3 {
+        font-size: 1.2rem;
+    }
+
+    .CategoryCard span {
+        font-size: 0.8rem;
+    }
+
+    .CategoryCard button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
