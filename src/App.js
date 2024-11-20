@@ -15,6 +15,7 @@ import Login from './Components/Login/Login.jsx';
 import SignIn from './Components/Sign-In/SignIn.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import DiscountSection from './Components/HomePage/DiscountSection.jsx';
+import Categories from './pages/Categories.jsx';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         } />
         
         <Route path="/menu" element={<Menu />} />
+        <Route path="/categories" element={<Categories />}/>
         <Route path="/services" element={<Services />} />
         <Route path="/login" element={<Login />}/>
         <Route path="/signin" element={<SignIn />}/>

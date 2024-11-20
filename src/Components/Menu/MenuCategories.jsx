@@ -1,5 +1,6 @@
 import React from "react";
-import '../Menu/Categories.css';
+import { useNavigate } from "react-router-dom"; 
+import '../Menu/MenuCategories.css';
 
 const categories = [
     {
@@ -11,7 +12,7 @@ const categories = [
     {
         id: 2,
         name: "Chinese",
-        description: "Savor the tastes of traditional Chinese cuisine.",
+        description: "Savor the tastes of traditional and authentic Chinese cuisine.",
         image: "Chinesefood.png",
     },
     {
@@ -59,24 +60,26 @@ const categories = [
     {
         id: 10,
         name: "American",
-        description: "Indulge in classic American comfort foods.",
+        description: "Indulge in classic American foods with immense flavor.",
         image: "Americanfood.webp",
     },
     {
         id: 11,
         name: "Korean",
-        description: "Enjoy savory, spicy, and flavorful Korean dishes.",
+        description: "Enjoy savory, spicy, flavorful, and traditional Korean dishes.",
         image: "Koreanfood.jpg",
     },
     {
         id: 12,
         name: "Turkish",
-        description: "Discover the exotic flavors of Turkish cuisine.",
+        description: "Discover the exotic and fresh flavors of Turkish cuisine.",
         image: "Turkishfood.webp",
     },
 ];
 
 const Categories = () => {
+    const navigate = useNavigate(); // Use navigate hook for redirection
+
     return (
         <div id="Categories">
             <p>Food Categories</p>
@@ -89,6 +92,11 @@ const Categories = () => {
                         <button>Explore</button>
                     </div>
                 ))}
+            </div>
+            <div className="SeeMoreContainer">
+                <button className="SeeMoreButton" onClick={() => navigate('/categories')}>
+                    See More
+                </button>
             </div>
         </div>
     );

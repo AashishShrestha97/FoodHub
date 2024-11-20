@@ -44,17 +44,16 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-                {/* Social Media Links Section */}
                 <div className="social-media">
                     <h2>Follow Us</h2>
                     <div className="social-icons">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/profile.php?id=100050210538259" target="_blank" rel="noopener noreferrer">
                             <img src="facebook.png" alt="Facebook" />
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                             <img src="twitter.png" alt="Twitter" />
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/aashish_shrestha_97/" target="_blank" rel="noopener noreferrer">
                             <img src="instagram.png" alt="Instagram" />
                         </a>
                     </div>
