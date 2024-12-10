@@ -6,11 +6,10 @@ const Description = () => {
 
   const images = ["food1.jpg", "food2.jpg", "food3.jpg"];
 
-  // Effect to change the background image every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setBgIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change every 3000 milliseconds (3 seconds)
+    }, 3000); 
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [images.length]);

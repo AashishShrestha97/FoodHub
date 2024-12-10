@@ -1,12 +1,11 @@
 import './index.css';
-import Navbar from './Components/Navbar.jsx'; // Navbar for home
-import Description from './Components/HomePage/Description.jsx'; // Home content
-import Image1 from './Components/HomePage/Image1.jsx'; // Home image component
-import Menu from './pages/Menu.jsx'; // Menu component
-import Services from './pages/Services.jsx'; // Services component
+import Navbar from './Components/Navbar.jsx'; 
+import Description from './Components/HomePage/Description.jsx'; 
+import Image1 from './Components/HomePage/Image1.jsx'; 
+import Menu from './pages/Menu.jsx';
+import Services from './pages/Services.jsx'; 
 import ContactUs from './Components/ContactUs.jsx';
 import './Components/Navbar.css';
-
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Info1 from './Components/HomePage/Info1.jsx';
@@ -21,7 +20,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Home Page - Renders Navbar, Description, and Image1 */}
         <Route path="/" element={
           <>
             <Navbar />

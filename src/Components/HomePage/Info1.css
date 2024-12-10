@@ -1,5 +1,6 @@
 /* Mainbox Styles */
 .mainbox {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: none;
     background: linear-gradient(135deg, #ff8c00, white);
     color: #ffffff;
@@ -12,18 +13,13 @@
     gap: 20px;
     position: relative;
     top: 90vh;
-    /* Start hidden to the left */
     transform: translateX(-100%);
     opacity: 0;
-    /* Start transparent */
 }
 
-/* Add a class for the visible state */
 .mainbox.visible {
     transform: translateX(0);
-    /* Move to the original position */
     opacity: 1;
-    /* Fully opaque */
 }
 
 /* Hover Effect */
@@ -41,7 +37,7 @@
 /* Heading Styles */
 #head {
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     color: red;
     margin-bottom: 10px;

@@ -50,6 +50,7 @@ const categories = [
         name: "Thai",
         description: "A perfect blend of spicy, sweet, and savory Thai dishes.",
         image: "Thaifood.jpeg",
+        
     },
     {
         id: 9,

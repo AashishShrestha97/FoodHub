@@ -1,9 +1,9 @@
 import React from "react";
-import '../Components/ContactUs.css';
+import '../Menu/ContactUs_Menu.css';
 
-const ContactUs = () => {
+const ContactUsMenu = () => {
     return (
-        <footer className="Mainbox">
+        <footer className="Mainbox-Menu">
             <div className="contact-container">
                 <div className="reach-us">
                     <h2 id="ReachUsHead">Reach Us At</h2>
@@ -62,4 +62,4 @@ const ContactUs = () => {
     );
 };
 
-export default ContactUs;
+export default ContactUsMenu;

@@ -1,12 +1,11 @@
 import React from "react";
-import "./Login.css"; // Make sure the CSS file is imported
+import "./Login.css"; 
 
 const Login = () => {
     return (
         <div className="gradient-custom-2 d-flex align-items-center justify-content-center">
             <div className="card text-white">
                 <div className="card-body p-5">
-                    {/* Center the logo and set a size */}
                     <h3 className="text-center mb-4">
                         <img src="Logo.png" alt="Lotus Logo" className="logo" />
                     </h3>

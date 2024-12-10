@@ -1,6 +1,6 @@
 /* Background gradient for the form */
 .gradient-custom-2 {
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
     /* Gradient for the right side */
     height: 100vh;
     /* Full height for gradient background */
