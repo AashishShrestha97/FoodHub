@@ -31,15 +31,18 @@
     display: inline-flex;
     position: absolute;
     margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #Sub-container {
-    color: white;
+    color: black;
     margin-top: 90px;
     font-size: 25px;
     font-weight: bold;
     position: absolute;
     margin-right: 35vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
 }
 
 #Discount-image img {

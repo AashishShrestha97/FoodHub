@@ -1,6 +1,6 @@
 /* Mainbox Styles */
 .mainbox {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: none;
     background: linear-gradient(135deg, #ff8c00, white);
     color: #ffffff;
@@ -37,7 +37,7 @@
 /* Heading Styles */
 #head {
     font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
     color: red;
     margin-bottom: 10px;
@@ -46,8 +46,8 @@
 /* Subtext Styles */
 #sub {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
     margin-top: 20px;
     line-height: 1.6;
 }

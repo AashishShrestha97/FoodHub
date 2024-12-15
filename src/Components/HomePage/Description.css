@@ -1,3 +1,7 @@
+#description {
+    margin-top: 150px;
+}
+
 #description #heading {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px;
@@ -24,7 +28,7 @@
 #line {
     border-bottom: 1px solid black;
     position: relative;
-    top: 28vw;
+    top: 28.6vw;
     width: 50vw;
     left: 172px;
 }

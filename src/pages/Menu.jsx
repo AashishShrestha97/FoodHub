@@ -1,4 +1,3 @@
-import PopularItems from '../Components/Menu/PopularItems.jsx';
 import Description from '../Components/Menu/Description.jsx';
 import Navbar from '../Components/Navbar.jsx'
 import Categories from '../Components/Menu/MenuCategories.jsx';
@@ -10,7 +9,6 @@ const Menu=()=>{
         <>
         <Navbar/>
         <Description/>
-        <PopularItems />
         <Categories />
         <Discount />
         <ContactUsMenu />

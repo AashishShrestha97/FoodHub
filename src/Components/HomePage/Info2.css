@@ -43,7 +43,7 @@
 /* Heading Styles */
 #Header {
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
     color: red;
     margin-bottom: 10px;
@@ -54,7 +54,7 @@
 /* Subtext Styles */
 #sub-head {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     margin-top: 20px;
     line-height: 1.6;
