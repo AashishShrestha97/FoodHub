@@ -1,4 +1,5 @@
-import FirstCard from "../Components/Categories/Firstcard";
+import Recipe from "../Components/Categories/Description-Recipe";
+import Card from "../Components/Categories/FirstCard";
 import ContactUs from "../Components/ContactUs";
 import Navbar from "../Components/Navbar";
 
@@ -6,7 +7,8 @@ const Categories=()=>{
     return(
         <>
         <Navbar/>
-        <FirstCard/>
+        <Card/>
+        <Recipe />
         <ContactUs/>
         </>
     )
